@@ -62,7 +62,7 @@ Different types of shifters available in digital electronics. They are basically
 
 # Resultant waveform
 
-![bstbout](Images/bs_plt_tb2.png)
+![bstbout](Images/bs_plot_tb2.png)
 
 # Author
  
