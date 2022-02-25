@@ -79,17 +79,17 @@ Different types of shifters available in digital electronics. They are basically
 
 # Reference
 
-📔 [1] P. Ashok Babu, V. Siva Nagaraju, Ramya Mariserla, Rajeev Ratna
+📔 P. Ashok Babu, V. Siva Nagaraju, Ramya Mariserla, Rajeev Ratna
 Vallabhuni, ”Realization of 8 x 4 Barrel shifter with 4-bit binary to Gray
 converter using FinFET for Low Power Digital Applications,” in Journal
 of Physics: Conference Series, 2021.
 
-📔 [2] Bari, Surajit De, Debashis Sarkar, Angsuman , ”Design of low power,
+📔 Bari, Surajit De, Debashis Sarkar, Angsuman , ”Design of low power,
 high speed 4 bit binary to Gray converter with 8 × 4 barrel shifter using
 nano dimensional MOS transistor for arithmetical, logical and telecommunication circuit and system application,” Microsystem Technologies,
 2019.
 
-📔 [3] J. S. Deepak Vudatha, N. Kota, P. Gutha, B. Sreeja and S. P. Rajeev,
+📔 J. S. Deepak Vudatha, N. Kota, P. Gutha, B. Sreeja and S. P. Rajeev,
 ”VLSI Design of Low Power 8 × 4 Barrel Shifter using 90 nm TG
 technology,” 2021 Fourth International Conference on Microelectronics,
 Signals Systems (ICMSS), 2021.
