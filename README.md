@@ -16,6 +16,53 @@ Different types of shifters available in digital electronics. They are basically
 
 # 8x4 Right Barrel Shifter
 
+## Circuit Schematic
+
+![bsintro](Images/bs_intro.png)
+
+## Circuit Output Waveforms
+
+![bsintroout](Images/bs_intro_out.png)
+
+# Tools used
+
+🌟 OS: CentOS Linux 7.9.2009
+
+ * The CentOS Linux distribution is a stable, predictable, manageable and reproducible platform derived from the sources of Red Hat Enterprise Linux (RHEL)
+
+🌟 Synopsys Custom Compiler
+
+ * The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. It delivers industry-leading productivity, performance, and ease-of-use while remaining easy to adopt for users of legacy tools.
+    
+   🔗 https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html
+
+🌟 PrimeSim 
+
+ *  PrimeSim™ SPICE is a high-performance SPICE circuit simulator for analog, RF, and mixed-signal applications. PrimeSim SPICE offers a unique multi-core/multi-machine scaling and heterogeneous compute acceleration on GPU/CPU delivering faster runtime with sign-off accuracy.
+
+   🔗 https://www.synopsys.com/implementation-and-signoff/ams-simulation/primesim-spice.html
+
+🌟 Synopsis SAED 32/28nm PDK
+
+ * The Synopsys 28nm Process Design Kit(PDK)
+
+# Implemented Circuit Design
+
+## Schematics
+
+![bssch](Images/bs_sch.png)
+
+## Symbol
+
+![bssym](Images/bs_sym.png)
+
+## Testbench Design
+
+![bstb](Images/bs_sch_tb2.png)
+
+# Resultant waveform
+
+![bstbout](Images/bs_plt_tb2.png)
 
 # Author
  
