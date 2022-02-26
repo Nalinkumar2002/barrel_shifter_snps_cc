@@ -18,8 +18,35 @@
 # 8x4 Right Barrel Shifter using NMOS Pass Transitor Logic
 
 
-
 In this repository, It gives a detailed report on the design of a 8x4 Right Barrel Shifter using NMOS Pass Transistor logic using 28nm technology node. This design is implemented and simulated using **Synopsys Custom Design Compiler** for the event [_Cloud Based Analog IC Design Hackathon_](https://hackathoniith.in) conducted by the [Department of Electrical Engineering at IIT Hyderabad](https://ee.iith.ac.in), and sponsored by [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html) and [VLSI System Design (VSD) Corp.](https://www.vlsisystemdesign.com) 
+
+<p align="center">
+  <img src="https://github.com/Nalinkumar2002/barrel_shifter_snps_cc/blob/main/Images/bs_logo.gif">
+</p>
+
+<br>
+
+# Table of Contents
+
+* [Introduction](#Introduction) 
+* [8x4 Right Barrel Shifter](#8x4-Right-Barrel-Shifter) 
+    * [Circuit Schematic](#Circuit-Schematic) 
+    * [Truth Table for Control Shift Bits in 8 × 4 Barrel Shifter](#Truth-Table-for-Control-Shift-Bits-in-8-×-4-Barrel-Shifter) 
+    * [Circuit Output Waveforms](#Circuit-Output-Waveforms) 
+* [Software Tools Used](#Software-Tools-Used) 
+* [Synopsis Custom Compiler Platform](#Synopsis-Custom-Compiler-Platform) 
+* [Implemented Circuit Design using Synopsis](#Implemented-Circuit-Design-using-Synopsis) 
+    * [Schematics](#Schematics) 
+    * [Symbol](#Symbol) 
+    * [Testbench Design](#Testbench-Design) 
+* [Resultant Waveforms](#Resultant-Waveforms) 
+* [Resultant Waveforms For Different Control Shift Input](#Resultant-Waveforms-For-Different-Control-Shift-Input) 
+* [Author](#Author)
+* [Acknowledgements](#Acknowledgements)
+* [References](#References)
+
+
+<br>
 
 # Introduction
 
@@ -51,7 +78,7 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 ![bsintroout](Images/bs_intro_out.png)
 
-# Tools used
+# Software Tools Used
 
 🌟 OS: CentOS Linux 7.9.2009
 
@@ -82,6 +109,7 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 ![bssnps](Images/bs_snps_2.png)
 
 ![bssnps](Images/bs_snps_3.png)
+
 
 # Implemented Circuit Design using Synopsis
 
@@ -126,7 +154,7 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
  
  📖 Chinmay panda, Technical Officer, Department of Electrical Engineering, IIT Hyderabad
 
-# Reference
+# References
 
 📔 P. Ashok Babu, V. Siva Nagaraju, Ramya Mariserla, Rajeev Ratna
 Vallabhuni, ”Realization of 8 x 4 Barrel shifter with 4-bit binary to Gray
