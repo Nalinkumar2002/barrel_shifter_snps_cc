@@ -10,9 +10,9 @@ In this repository, It gives a detailed report on the design of a 8x4 Right Barr
 
 # Introduction
 
-An Arithmetic logic unit (ALU) in a processor performs various arithmetic operations like addition, subtraction, multiplication and also performs logical operations like AND, OR etc. Most of the operations require only operands, but few operations require sub-modules along with operands. For example, multiplication operation is done by multiplying of data using AND gate and addition of partial products using full adders or half adders. It also requires a shifter to shift partial products so that they can be added in correct format. Hence these modules play an important role in characterizing the performance of processors. 
+An Arithmetic logic unit (ALU) in a processor can performs various arithmetic operations and logical operations. Multiplication operation is done by multiplying of data using AND gate and addition of partial products using full adders or half adders. It also requires a shifter to shift partial products so that they can be added in correct format and can be validated. Hence these modules play an important role in characterizing the performance of processors. 
 
-Different types of shifters available in digital electronics. They are basically sequential shifter such as serial shifters, parallel shifters which shifts or rotates data based on clock cycle of the processor. They require n clock cycles to shift n-data bits which are not beneficial in terms of performance of the processor. To overcome this problem, ALU‘s are embedded with a module called Barrel shifter. A Barrel shifter as name suggests shits data either left or right based on the control shift bits configuration. It is usually consists of multiplexers connected parallel to each other. It works completely on combinational logic and shifts data in a single clock cycle. Due to its advantage, RISC processors use these barrel shifters embedded in ALU.
+ Thereare different types of shifters like serial shifter, parallel shifterswhich shifts data based on clock cycle of microprocessor.They require n cycle to shift n-data bits. To overcome thisdisadvantage, Barrel shifters are used. Barrel shifter is used to shift or rotate n-bits in single clock cycle based on the control shift bits configuration. It is usually consists of multiplexers connected parallel to each other. It works completely on combinational logic and shifts data in a single clock cycle. Due to its advantage, RISC processors use these barrel shifters embedded in ALU.
 
 # 8x4 Right Barrel Shifter
 
@@ -46,7 +46,17 @@ Different types of shifters available in digital electronics. They are basically
 
  * The Synopsys 28nm Process Design Kit(PDK)
 
-# Implemented Circuit Design
+# Synopsis Custom Compiler Platform
+
+![bssnps](Images/bs_snps_0.png)
+
+![bssnps](Images/bs_snps_1.png)
+
+![bssnps](Images/bs_snps_2.png)
+
+![bssnps](Images/bs_snps_3.png)
+
+# Implemented Circuit Design using Synopsis
 
 ## Schematics
 
@@ -60,13 +70,23 @@ Different types of shifters available in digital electronics. They are basically
 
 ![bstb](Images/bs_sch_tb2.png)
 
-# Resultant waveform
+# Resultant Waveforms
 
 ![bstbout](Images/bs_plot_tb2.png)
 
+## Resultant Waveforms For Different Control Shift Input 
+
+![bstbout](Images/bs_plot_tb0.png)
+
+![bstbout](Images/bs_plot_tb1.png)
+
+![bstbout](Images/bs_plot_tb3.png)
+
+![bstbout](Images/bs_plot_tb4.png)
+
 # Author
  
- 🖊️ Nalinkumar S , B.E (Electronics and Communication Engineering), Madras Institute of Technology, Anna University, Tamil Nadu 
+ 🖊️ Nalinkumar S, Pre-Final year student, B.E. ECE, Madras Institute of Technology, Anna University, Chennai, India
  
  
 # Acknowledgements
@@ -75,7 +95,7 @@ Different types of shifters available in digital electronics. They are basically
  
  📖 [Synopsys Team/Company](https://www.synopsys.com/)
  
- 📖 Chinmay panda, IIT Hyderabad
+ 📖 Chinmay panda, Technical Officer, Department of Electrical Engineering, IIT Hyderabad
 
 # Reference
 
@@ -86,7 +106,7 @@ of Physics: Conference Series, 2021.
 
 📔 Bari, Surajit De, Debashis Sarkar, Angsuman , ”Design of low power,
 high speed 4 bit binary to Gray converter with 8 × 4 barrel shifter using
-nano dimensional MOS transistor for arithmetical, logical and telecommunication circuit and system application,” Microsystem Technologies,
+nano dimensional MOS transistor for arithmetical, logical and telecommunication circuit and system application,” Microsystem Technologies,
 2019.
 
 📔 J. S. Deepak Vudatha, N. Kota, P. Gutha, B. Sreeja and S. P. Rajeev,
