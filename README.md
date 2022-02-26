@@ -20,6 +20,20 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 ![bsintro](Images/bs_intro.png)
 
+## Truth Table for Control Shift Bits in 8 × 4 Barrel Shifter
+
+<table>
+ <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
+ <tr><td>Sh0</td><td>Sh1</td><td>Sh2</td><td>Sh3</td><td>Sh4</td><td>Out0</td><td>Out1</td><td>Out2</td><td>Out3</td></tr>
+ <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>In0</td><td>In1</td><td>In2</td><td>In3</td></tr>
+ <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>In1</td><td>In2</td><td>In3</td><td>In4</td></tr>
+ <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>In2</td><td>In3</td><td>In4</td><td>In5</td></tr>
+ <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>In3</td><td>In4</td><td>In5</td><td>In6</td></tr>
+ <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>In4</td><td>In5</td><td>In6</td><td>In7</td></tr>
+</table>
+
+
+
 ## Circuit Output Waveforms
 
 ![bsintroout](Images/bs_intro_out.png)
@@ -83,6 +97,8 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 ![bstbout](Images/bs_plot_tb3.png)
 
 ![bstbout](Images/bs_plot_tb4.png)
+
+
 
 # Author
  
