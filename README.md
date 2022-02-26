@@ -1,8 +1,21 @@
-# 8x4 Right Barrel Shifter using NMOS Pass Transitor Logic
+</br>
+
+---
+
+![logo](Images/logo.png)
+
+---
+
+</br>
+
 
 ![Size](https://img.shields.io/github/repo-size/Nalinkumar2002/barrel_shifter_snps_cc?color=red)
 ![Last Commit](https://img.shields.io/github/last-commit/Nalinkumar2002/barrel_shifter_snps_cc?color=green)
 ![license](https://img.shields.io/github/license/Nalinkumar2002/barrel_shifter_snps_cc?color=blue)
+
+</br>
+
+# 8x4 Right Barrel Shifter using NMOS Pass Transitor Logic
 
 
 
