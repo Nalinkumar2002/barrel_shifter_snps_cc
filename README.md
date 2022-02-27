@@ -1,10 +1,12 @@
 </br>
 
----
+<div align="center">
+  
+![-------](Images/rainbowline.png)
 
 ![logo](Images/logo.png)
 
----
+![-------](Images/rainbowline.png)
 
 </br>
 
@@ -12,6 +14,11 @@
 ![Size](https://img.shields.io/github/repo-size/Nalinkumar2002/barrel_shifter_snps_cc?color=red)
 ![Last Commit](https://img.shields.io/github/last-commit/Nalinkumar2002/barrel_shifter_snps_cc?color=green)
 ![license](https://img.shields.io/github/license/Nalinkumar2002/barrel_shifter_snps_cc?color=blue)
+
+![tool](https://img.shields.io/badge/Tool-Synopsis%20Custom%20Compiler-28A745)
+![pdk](https://img.shields.io/badge/PDK-SAED%2028nm-blueviolet)
+
+</div>
 
 </br>
 
@@ -28,7 +35,7 @@ In this repository, It gives a detailed report on the design of a 8x4 Right Barr
 
 <br>
 
-# Table of Contents
+# 📑 Table of Contents
 
 * [Introduction](#Introduction) 
 * [8x4 Right Barrel Shifter](#8x4-Right-Barrel-Shifter) 
@@ -50,13 +57,13 @@ In this repository, It gives a detailed report on the design of a 8x4 Right Barr
 
 <br>
 
-# Introduction
+# 📝 Introduction
 
 An Arithmetic logic unit (ALU) in a processor can performs various arithmetic operations and logical operations. Multiplication operation is done by multiplying of data using AND gate and addition of partial products using full adders or half adders. It also requires a shifter to shift partial products so that they can be added in correct format and can be validated. Hence these modules play an important role in characterizing the performance of processors. 
 
  Thereare different types of shifters like serial shifter, parallel shifterswhich shifts data based on clock cycle of microprocessor.They require n cycle to shift n-data bits. To overcome thisdisadvantage, Barrel shifters are used. Barrel shifter is used to shift or rotate n-bits in single clock cycle based on the control shift bits configuration. It is usually consists of multiplexers connected parallel to each other. It works completely on combinational logic and shifts data in a single clock cycle. Due to its advantage, RISC processors use these barrel shifters embedded in ALU.
 
-# 8x4 Right Barrel Shifter
+# 📝 8x4 Right Barrel Shifter
 
 An 8x4 rightbarrel shifter using NMOS pass transistor is designed. Thereare 8 input bit pins, 4 output bit pins and 5 control shift bitpins. The 8 input bit pins are In0, In1, In2, In3, In4, In5, In6,In7. The 4 output bit pins are Out0, Out1, Out2, Out3. The 5control shift bit pins are Sh0, Sh1, Sh2, Sh3, Sh4, Sh5. Gateterminal of each NMOS transistor is connected to any onecontrol shift signal as input. Anyone of signal from Sh0 toSh4 is enabled high and remaining signal are made low. 
 
@@ -138,7 +145,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 ![bsintroout](Images/bs_intro_out.png)
 
-# Software Tools Used
+# 📝 Software Tools Used
 
 🌟 OS: CentOS Linux 7.9.2009
 
@@ -160,7 +167,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
  * The Synopsys 28nm Process Design Kit(PDK)
 
-# Synopsis Custom Compiler Platform
+# 📝 Synopsis Custom Compiler Platform
 
 * Starting of Synopsis Custom Compiler tool and opening of circuit schematic from library manager of Synopsis custom compiler tool are show below.
 
@@ -173,7 +180,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 ![bssnps](Images/bs_snps_3.png)
 
 
-# Implemented Circuit Design using Synopsis
+# 📝 Implemented Circuit Design using Synopsis
 
 ## Schematics
 
@@ -193,7 +200,7 @@ Testbench design for giving input signal, control shift signal and other power s
 
 ![bstb](Images/bs_sch_tb2.png)
 
-# Resultant Waveforms
+# 📝 Resultant Waveforms
 
 Resultant waveform of implemented 8x4 Barrel Shifter
 
@@ -250,7 +257,7 @@ As, the control shift signal *Sh2* is made `HIGH`, the output values are right s
 
 ![bstbout](Images/bs_plot_tb4.png)
 
-# Netlist
+# 📝 Netlist
 
 The Netlist for the designed circuit is generated after simulating the circuit testbench. The Netlist is obtained using **PrimeSim**.
 
@@ -353,12 +360,12 @@ v38 sh4 gnd! dc=1.05
 ```
 
 
-# Author
+# 📝 Author
  
  🖊️ Nalinkumar S, Pre-Final year student, B.E. ECE, Madras Institute of Technology, Anna University, Chennai, India
  
  
-# Acknowledgements
+# 📝 Acknowledgements
 
  📖 Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalpghosh@gmail.com
  
@@ -366,7 +373,7 @@ v38 sh4 gnd! dc=1.05
  
  📖 Chinmay panda, Technical Officer, Department of Electrical Engineering, IIT Hyderabad
 
-# References
+# 📝 References
 
 📔 P. Ashok Babu, V. Siva Nagaraju, Ramya Mariserla, Rajeev Ratna
 Vallabhuni, ”Realization of 8 x 4 Barrel shifter with 4-bit binary to Gray
