@@ -394,12 +394,12 @@ v38 sh4 gnd! dc=1.05
 
 </br>
 
-# 📝 Author
+# 📜 Author
  
  🖊️ Nalinkumar S, Pre-Final year student, B.E. ECE, Madras Institute of Technology, Anna University, Chennai, India
  
  
-# 📝 Acknowledgements
+# 🎓 Acknowledgements
 
  📖 Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalpghosh@gmail.com
  
@@ -407,7 +407,7 @@ v38 sh4 gnd! dc=1.05
  
  📖 Chinmay panda, Technical Officer, Department of Electrical Engineering, IIT Hyderabad
 
-# 📝 References
+# 🔍 References
 
 📔 P. Ashok Babu, V. Siva Nagaraju, Ramya Mariserla, Rajeev Ratna
 Vallabhuni, ”Realization of 8 x 4 Barrel shifter with 4-bit binary to Gray
