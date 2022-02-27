@@ -38,21 +38,21 @@ In this repository, It gives a detailed report on the design of a 8x4 Right Barr
 # 📑 Table of Contents
 
 * [Introduction](#-Introduction) 
-* [8x4 Right Barrel Shifter](#8x4-Right-Barrel-Shifter) 
+* [8x4 Right Barrel Shifter](#-8x4-Right-Barrel-Shifter) 
     * [Circuit Schematic](#Circuit-Schematic) 
     * [Truth Table for Control Shift Bits in 8 × 4 Barrel Shifter](#Truth-Table-for-Control-Shift-Bits-in-8-×-4-Barrel-Shifter) 
     * [Circuit Output Waveforms](#Circuit-Output-Waveforms) 
-* [Software Tools Used](#Software-Tools-Used) 
-* [Synopsis Custom Compiler Platform](#Synopsis-Custom-Compiler-Platform) 
-* [Implemented Circuit Design using Synopsis](#Implemented-Circuit-Design-using-Synopsis) 
+* [Software Tools Used](#-Software-Tools-Used) 
+* [Synopsis Custom Compiler Platform](#-Synopsis-Custom-Compiler-Platform) 
+* [Implemented Circuit Design using Synopsis](#-Implemented-Circuit-Design-using-Synopsis) 
     * [Schematics](#Schematics) 
     * [Symbol](#Symbol) 
     * [Testbench Design](#Testbench-Design) 
-* [Resultant Waveforms](#Resultant-Waveforms) 
-* [Resultant Waveforms For Different Control Shift Input](#Resultant-Waveforms-For-Different-Control-Shift-Input) 
-* [Author](#Author)
-* [Acknowledgements](#Acknowledgements)
-* [References](#References)
+* [Resultant Waveforms](#-Resultant-Waveforms) 
+* [Resultant Waveforms For Different Control Shift Input](#R-esultant-Waveforms-For-Different-Control-Shift-Input) 
+* [Author](#-Author)
+* [Acknowledgements](#-Acknowledgements)
+* [References](#-References)
 
 
 <br>
