@@ -20,6 +20,8 @@
 
 In this repository, It gives a detailed report on the design of a 8x4 Right Barrel Shifter using NMOS Pass Transistor logic using 28nm technology node. This design is implemented and simulated using **Synopsys Custom Design Compiler** for the event [_Cloud Based Analog IC Design Hackathon_](https://hackathoniith.in) conducted by the [Department of Electrical Engineering at IIT Hyderabad](https://ee.iith.ac.in), and sponsored by [Synopsys India](https://www.synopsys.com/company/contact-synopsys/office-locations/india/about-synopsys-india.html) and [VLSI System Design (VSD) Corp.](https://www.vlsisystemdesign.com) 
 
+<br>
+
 <p align="center">
   <img src="https://github.com/Nalinkumar2002/barrel_shifter_snps_cc/blob/main/Images/bs_logo.gif">
 </p>
@@ -56,7 +58,63 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 # 8x4 Right Barrel Shifter
 
+An 8x4 rightbarrel shifter using NMOS pass transistor is designed. Thereare 8 input bit pins, 4 output bit pins and 5 control shift bitpins. The 8 input bit pins are In0, In1, In2, In3, In4, In5, In6,In7. The 4 output bit pins are Out0, Out1, Out2, Out3. The 5control shift bit pins are Sh0, Sh1, Sh2, Sh3, Sh4, Sh5. Gateterminal of each NMOS transistor is connected to any onecontrol shift signal as input. Anyone of signal from Sh0 toSh4 is enabled high and remaining signal are made low. 
+
+If the control shift signal *Sh0* is made `HIGH` then, 
+
+In0 --> Out0
+
+In1 --> Out1
+
+In2 --> Out2
+
+In3 --> Out3
+
+Similarly, If *Sh1* is enabled,then the outputs are right shifted by one bit. 
+
+For example, Now consider the input bit pattern
+
+<table>
+  <tr><th>Input Signal</th><th>Input Value</th></tr>
+  <tr><td>In0</td><td>1</td></tr>
+  <tr><td>In1</td><td>1</td></tr>
+  <tr><td>In2</td><td>0</td></tr>
+  <tr><td>In3</td><td>0</td></tr>
+  <tr><td>In4</td><td>1</td></tr>
+  <tr><td>In5</td><td>0</td></tr>
+  <tr><td>In6</td><td>1</td></tr>
+  <tr><td>In7</td><td>0</td></tr>
+</table>
+
+and control shift bits as
+
+<table>
+  <tr><th>Control Shift Signal</th><th>Control Shift Value</th></tr>
+  <tr><td>Sh0</td><td>0</td></tr>
+  <tr><td>Sh1</td><td>0</td></tr>
+  <tr><td>Sh2</td><td>1</td></tr>
+  <tr><td>Sh3</td><td>0</td></tr>
+  <tr><td>Sh4</td><td>0</td></tr>
+</table>
+
+> Control Shift Bit *Sh2* is made `HIGH`
+
+the resultant outputs are
+
+<table>
+  <tr><th>Output Signal</th><th>Output Value</th></tr>
+  <tr><td>Out0</td><td>0</td></tr>
+  <tr><td>Out1</td><td>0</td></tr>
+  <tr><td>Out2</td><td>1</td></tr>
+  <tr><td>Out3</td><td>0</td></tr>
+ 
+</table>
+
+
+
 ## Circuit Schematic
+
+Schematic of 8x4 Barrel Shifter is displayed below.
 
 ![bsintro](Images/bs_intro.png)
 
@@ -75,6 +133,8 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 
 ## Circuit Output Waveforms
+
+* Output waveforms are plotted for Control Shift bit *Sh2* is made `HIGH` 
 
 ![bsintroout](Images/bs_intro_out.png)
 
@@ -102,6 +162,8 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 # Synopsis Custom Compiler Platform
 
+* Starting of Synopsis Custom Compiler tool and opening of circuit schematic from library manager of Synopsis custom compiler tool are show below.
+
 ![bssnps](Images/bs_snps_0.png)
 
 ![bssnps](Images/bs_snps_1.png)
@@ -115,27 +177,76 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 ## Schematics
 
+Schematic designed for 8x4 Right Barrel Shifter using synopsis tool and SAED 28nm PDK.
+
 ![bssch](Images/bs_sch.png)
 
 ## Symbol
+
+Symbol of implemented 8x4 Barrel Shifter.
 
 ![bssym](Images/bs_sym.png)
 
 ## Testbench Design
 
+Testbench design for giving input signal, control shift signal and other power supplies.
+
 ![bstb](Images/bs_sch_tb2.png)
 
 # Resultant Waveforms
 
+Resultant waveform of implemented 8x4 Barrel Shifter
+
 ![bstbout](Images/bs_plot_tb2.png)
+
+As, the control shift signal *Sh2* is made `HIGH`, the output values are right shifted by 2 bit positions.
+
+<table>
+ <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
+ <tr><td>Sh0</td><td>Sh1</td><td>Sh2</td><td>Sh3</td><td>Sh4</td><td>Out0</td><td>Out1</td><td>Out2</td><td>Out3</td></tr>
+ <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>In2</td><td>In3</td><td>In4</td><td>In5</td></tr>
+</table>
 
 ## Resultant Waveforms For Different Control Shift Input 
 
+
+* For the control shift signal *Sh0* is made `HIGH`, the output values are 
+
+<table>
+ <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
+ <tr><td>Sh0</td><td>Sh1</td><td>Sh2</td><td>Sh3</td><td>Sh4</td><td>Out0</td><td>Out1</td><td>Out2</td><td>Out3</td></tr>
+ <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>In0</td><td>In1</td><td>In2</td><td>In3</td></tr>
+</table>
+
 ![bstbout](Images/bs_plot_tb0.png)
+
+* For the control shift signal *Sh1* is made `HIGH`, the output values are 
+
+<table>
+ <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
+ <tr><td>Sh0</td><td>Sh1</td><td>Sh2</td><td>Sh3</td><td>Sh4</td><td>Out0</td><td>Out1</td><td>Out2</td><td>Out3</td></tr>
+ <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>In1</td><td>In2</td><td>In3</td><td>In4</td></tr>
+</table>
 
 ![bstbout](Images/bs_plot_tb1.png)
 
+* For the control shift signal *Sh3* is made `HIGH`, the output values are 
+
+<table>
+ <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
+ <tr><td>Sh0</td><td>Sh1</td><td>Sh2</td><td>Sh3</td><td>Sh4</td><td>Out0</td><td>Out1</td><td>Out2</td><td>Out3</td></tr>
+ <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>In3</td><td>In4</td><td>In5</td><td>In6</td></tr>
+</table>
+
 ![bstbout](Images/bs_plot_tb3.png)
+
+* For the control shift signal *Sh4* is made `HIGH`, the output values are 
+
+<table>
+ <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
+ <tr><td>Sh0</td><td>Sh1</td><td>Sh2</td><td>Sh3</td><td>Sh4</td><td>Out0</td><td>Out1</td><td>Out2</td><td>Out3</td></tr>
+ <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>In4</td><td>In5</td><td>In6</td><td>In7</td></tr>
+</table>
 
 ![bstbout](Images/bs_plot_tb4.png)
 
