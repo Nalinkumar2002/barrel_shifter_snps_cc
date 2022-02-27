@@ -37,7 +37,7 @@ In this repository, It gives a detailed report on the design of a 8x4 Right Barr
 
 # 📑 Table of Contents
 
-* [Introduction](#📝-Introduction) 
+* [Introduction](#-Introduction) 
 * [8x4 Right Barrel Shifter](#8x4-Right-Barrel-Shifter) 
     * [Circuit Schematic](#Circuit-Schematic) 
     * [Truth Table for Control Shift Bits in 8 × 4 Barrel Shifter](#Truth-Table-for-Control-Shift-Bits-in-8-×-4-Barrel-Shifter) 
