@@ -139,6 +139,107 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
 
 ![bstbout](Images/bs_plot_tb4.png)
 
+# Netlist
+
+The Netlist for the designed circuit is generated after simulating the circuit testbench. The Netlist is obtained using **PrimeSim**.
+
+```
+*  Generated for: PrimeSim
+*  Design library name: barrel_shifter
+*  Design cell name: 8x4_barrel_shifter_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Sat Feb 26 14:03:55 2022
+
+.global gnd!
+********************************************************************************
+* Library          : barrel_shifter
+* Cell             : 8x4_barrel_shifter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _8x4_barrel_shifter in0 in1 in2 in3 in4 in5 in6 in7 out0 out1 out2 out3
++ sh0 sh1 sh2 sh3 sh4
+xm30 out3 sh4 in7 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm29 out3 sh0 in3 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm28 out3 sh1 in4 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm27 out3 sh2 in5 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm26 out3 sh3 in6 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm25 out2 sh4 in6 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm24 out2 sh3 in5 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm22 out1 sh4 in5 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm15 out1 sh1 in2 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm13 out0 sh4 in4 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm20 out2 sh1 in3 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm19 out2 sh0 in2 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm18 out1 sh3 in4 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm17 out1 sh2 in3 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm16 out1 sh0 in1 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm21 out2 sh2 in4 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm3 out0 sh2 in2 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm2 out0 sh1 in1 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm1 out0 sh0 in0 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm4 out0 sh3 in3 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+.ends _8x4_barrel_shifter
+
+********************************************************************************
+* Library          : barrel_shifter
+* Cell             : 8x4_barrel_shifter_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 in0 in1 in2 in3 in4 in5 in6 in7 out0 out1 out2 out3 sh0 sh1 sh2 sh3 sh4
++ _8x4_barrel_shifter
+v8 in0 gnd! dc=0 pulse ( 0 1.05 4m 200p 200p 10m 20m )
+v7 in1 gnd! dc=0 pulse ( 0 1.05 8m 200p 200p 10m 20m )
+v6 in2 gnd! dc=0 pulse ( 0 1.05 12m 200p 200p 10m 20m )
+v5 in3 gnd! dc=0 pulse ( 0 1.05 16m 200p 200p 10m 20m )
+v4 in4 gnd! dc=0 pulse ( 0 1.05 20m 200p 200p 10m 20m )
+v3 in5 gnd! dc=0 pulse ( 0 1.05 24m 200p 200p 10m 20m )
+v2 in6 gnd! dc=0 pulse ( 0 1.05 28m 200p 200p 10m 20m )
+v1 in7 gnd! dc=0 pulse ( 0 1.05 32m 200p 200p 10m 20m )
+c30 out2 gnd! c=1p
+c29 out3 gnd! c=1p
+c28 out1 gnd! c=1p
+c27 out0 gnd! c=1p
+v35 sh0 gnd! dc=0
+v36 sh1 gnd! dc=0
+v37 sh3 gnd! dc=0
+v39 sh2 gnd! dc=0
+v38 sh4 gnd! dc=1.05
+
+
+
+
+
+.tran '0.001*(50m-0)' '50m' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(in0) v(in1) v(in2) v(in3) v(in4) v(in5) v(in6) v(in7) v(out0)
++ v(out1) v(out2) v(out3)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
+
+```
 
 
 # Author
