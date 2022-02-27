@@ -159,6 +159,8 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 # 📝 Software Tools Used
 
+<br>
+
 🌟 OS: CentOS Linux 7.9.2009
 
  * The CentOS Linux distribution is a stable, predictable, manageable and reproducible platform derived from the sources of Red Hat Enterprise Linux (RHEL)
