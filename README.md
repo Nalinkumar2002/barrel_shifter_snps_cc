@@ -119,13 +119,13 @@ the resultant outputs are
 
 
 
-## Circuit Schematic
+## 📋 Circuit Schematic
 
 Schematic of 8x4 Barrel Shifter is displayed below.
 
 ![bsintro](Images/bs_intro.png)
 
-## Truth Table for Control Shift Bits in 8 × 4 Barrel Shifter
+## 📋 Truth Table for Control Shift Bits in 8 × 4 Barrel Shifter
 
 <table>
  <tr><th colspan="5" style="text-align:center" > Control Shift Bits </th><th colspan="5"> Output </th></tr>
@@ -139,7 +139,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 
 
-## Circuit Output Waveforms
+## 📋 Circuit Output Waveforms
 
 * Output waveforms are plotted for Control Shift bit *Sh2* is made `HIGH` 
 
@@ -182,19 +182,19 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 # 📝 Implemented Circuit Design using Synopsis
 
-## Schematics
+## 📋 Schematics
 
 Schematic designed for 8x4 Right Barrel Shifter using synopsis tool and SAED 28nm PDK.
 
 ![bssch](Images/bs_sch.png)
 
-## Symbol
+## 📋 Symbol
 
 Symbol of implemented 8x4 Barrel Shifter.
 
 ![bssym](Images/bs_sym.png)
 
-## Testbench Design
+## 📋 Testbench Design
 
 Testbench design for giving input signal, control shift signal and other power supplies.
 
@@ -214,7 +214,7 @@ As, the control shift signal *Sh2* is made `HIGH`, the output values are right s
  <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>In2</td><td>In3</td><td>In4</td><td>In5</td></tr>
 </table>
 
-## Resultant Waveforms For Different Control Shift Input 
+## 📋 Resultant Waveforms For Different Control Shift Input 
 
 
 * For the control shift signal *Sh0* is made `HIGH`, the output values are 
