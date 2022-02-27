@@ -62,6 +62,12 @@ In this repository, It gives a detailed report on the design of a 8x4 Right Barr
 An Arithmetic logic unit (ALU) in a processor can performs various arithmetic operations and logical operations. Multiplication operation is done by multiplying of data using AND gate and addition of partial products using full adders or half adders. It also requires a shifter to shift partial products so that they can be added in correct format and can be validated. Hence these modules play an important role in characterizing the performance of processors. 
 
  Thereare different types of shifters like serial shifter, parallel shifterswhich shifts data based on clock cycle of microprocessor.They require n cycle to shift n-data bits. To overcome thisdisadvantage, Barrel shifters are used. Barrel shifter is used to shift or rotate n-bits in single clock cycle based on the control shift bits configuration. It is usually consists of multiplexers connected parallel to each other. It works completely on combinational logic and shifts data in a single clock cycle. Due to its advantage, RISC processors use these barrel shifters embedded in ALU.
+ 
+ </br>
+
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
 
 # 📝 8x4 Right Barrel Shifter
 
@@ -145,6 +151,12 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 ![bsintroout](Images/bs_intro_out.png)
 
+</br>
+
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
+
 # 📝 Software Tools Used
 
 🌟 OS: CentOS Linux 7.9.2009
@@ -167,6 +179,12 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
  * The Synopsys 28nm Process Design Kit(PDK)
 
+</br>
+
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
+
 # 📝 Synopsis Custom Compiler Platform
 
 * Starting of Synopsis Custom Compiler tool and opening of circuit schematic from library manager of Synopsis custom compiler tool are show below.
@@ -178,6 +196,12 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 ![bssnps](Images/bs_snps_2.png)
 
 ![bssnps](Images/bs_snps_3.png)
+
+</br>
+
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
 
 
 # 📝 Implemented Circuit Design using Synopsis
@@ -199,6 +223,12 @@ Symbol of implemented 8x4 Barrel Shifter.
 Testbench design for giving input signal, control shift signal and other power supplies.
 
 ![bstb](Images/bs_sch_tb2.png)
+
+</br>
+
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
 
 # 📝 Resultant Waveforms
 
@@ -256,6 +286,12 @@ As, the control shift signal *Sh2* is made `HIGH`, the output values are right s
 </table>
 
 ![bstbout](Images/bs_plot_tb4.png)
+
+</br>
+
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
 
 # 📝 Netlist
 
@@ -332,8 +368,6 @@ v38 sh4 gnd! dc=1.05
 
 
 
-
-
 .tran '0.001*(50m-0)' '50m' name=tran
 
 .option primesim_remove_probe_prefix = 0
@@ -344,7 +378,6 @@ v38 sh4 gnd! dc=1.05
 .temp 25
 
 
-
 .option primesim_output=wdf
 
 
@@ -352,13 +385,14 @@ v38 sh4 gnd! dc=1.05
 
 
 
-
-
-
 .end
 
 ```
+</br>
 
+*[Back To Top](#Table-of-Contents)* ⤴️ 
+
+</br>
 
 # 📝 Author
  
