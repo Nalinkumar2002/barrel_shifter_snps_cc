@@ -65,7 +65,7 @@ An Arithmetic logic unit (ALU) in a processor can performs various arithmetic op
  
  </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
@@ -153,7 +153,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
@@ -181,7 +181,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
@@ -199,7 +199,7 @@ Schematic of 8x4 Barrel Shifter is displayed below.
 
 </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
@@ -226,7 +226,7 @@ Testbench design for giving input signal, control shift signal and other power s
 
 </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
@@ -289,7 +289,7 @@ As, the control shift signal *Sh2* is made `HIGH`, the output values are right s
 
 </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
@@ -390,7 +390,7 @@ v38 sh4 gnd! dc=1.05
 ```
 </br>
 
-*[Back To Top](#Table-of-Contents)* ⤴️ 
+*[Back To Top](#-Table-of-Contents)* ⤴️ 
 
 </br>
 
